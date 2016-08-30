@@ -19,10 +19,14 @@ int main()
     int* a = new int[N];
  
     for (std::size_t n = 0; n < N; ++n)
+    {
         a[n] = n;
+    }	
         
     for (std::size_t n = N; n-- > 0;) // Reverse cycles are tricky for unsigned types.
+    {
         std::cout << a[n] << " ";
+    }
  
     delete[] a;
     
