@@ -1,6 +1,5 @@
 #include <functional>
 #include <iostream>
-#include <string>
 
 bool greater(int x, int y)
 {
