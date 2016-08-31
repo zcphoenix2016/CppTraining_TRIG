@@ -7,6 +7,12 @@ public:
 
     Foo(int val) : m_val(val)
     {
+        std::cout << "Foo constructor." << std::endl;
+    }
+
+    ~Foo()
+    {
+        std::cout << "Foo destructor." << std::endl;
     }
 
     int getVal()
@@ -29,6 +35,7 @@ int main()
     {
         std::cout << pf->getVal() << std::endl;
     }
+    pf->~Foo();
 
     delete [] buffer;
 
