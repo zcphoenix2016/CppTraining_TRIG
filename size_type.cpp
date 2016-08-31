@@ -27,6 +27,7 @@ int main()
     {
         std::cout << a[n] << " ";
     }
+    std::cout << std::endl;
  
     delete[] a;
     
