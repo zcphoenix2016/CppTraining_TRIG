@@ -52,7 +52,7 @@ public:
 	std::cout << "Derived desctructor" << std::endl;
     }
 
-    Derived(Derived&& rhs) : Base(dynamic_cast<Base&&>(rhs))
+    Derived(Derived&& rhs) : Base(std::move(rhs))
     {
         m_pd = rhs.m_pd;
 	rhs.m_pd = nullptr;
