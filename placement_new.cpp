@@ -39,6 +39,14 @@ int main()
 
     delete [] buffer;
 
+    /*
+     * Destructor function could be invoked explicitly via objects.
+     * However, it's unnecessary because the destructor function will 
+     * be invoked when the local variable pops out from the stack.
+    Foo f;
+    f.~Foo();
+    */
+
     return 0;
 }
 
